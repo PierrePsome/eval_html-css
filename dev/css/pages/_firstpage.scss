@@ -1,19 +1,22 @@
 
 // POPULAR DESTINATION
+.block-txt-mp {
+    text-align: center;
+    margin-bottom: 100px;
+    h2 {
+        font-size: 36px;
+    }
+
+    p {
+        color: #2222229f;
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
 .popular {
     margin: 100px 0px 100px 0px;
     text-align: center;
-    .popular-block-txt {
-        margin-bottom: 100px;
-        h2 {
-
-        }
-
-        p {
-            color: #2222229f;
-            font-size: 14px;
-        }
-    }
 
     .popular-block-img {
         color: white;
@@ -47,6 +50,8 @@
     
             p {
                 margin: 0;
+                letter-spacing: 1px;
+                margin-top: 5px;
             }
     
             h4 {
@@ -93,5 +98,50 @@
 
     .popular-img:nth-child(3) {
         background: url(../img/d3.jpg) center/cover;
+    }
+}
+
+//Provide affordable prices
+.provide {
+    padding: 100px 0px 100px 0px;
+    background-color: #f9f9ff;
+
+    .packages-cont {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        
+        .packages {
+            padding: 20px;
+            background-color: white;
+
+            h4 {
+                text-align: center;
+                border-bottom: solid 1.5px #f8b600;
+                padding-bottom: 20px;
+                font-size: 23px;
+            }
+
+            .packages-prices {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+
+                span:nth-of-type(2) {
+                    background-color: rgba(128, 128, 128, 0.075);
+                    padding: 10px 20px 10px 20px;
+                    border: solid 1px rgba(128, 128, 128, 0.151);
+                    border-radius: 3px;
+                    transition: .3s all;
+                    cursor: pointer;
+                }
+
+                span:nth-of-type(2):hover {
+                    background-color: #f8b600;
+                    border: solid 1px #f8b600;
+                }
+            }
+        }
     }
 }
