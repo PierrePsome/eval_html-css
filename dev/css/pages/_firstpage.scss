@@ -52,6 +52,7 @@
                 margin: 0;
                 letter-spacing: 1px;
                 margin-top: 5px;
+                color: white;
             }
     
             h4 {
@@ -141,6 +142,205 @@
                     background-color: #f8b600;
                     border: solid 1px #f8b600;
                 }
+            }
+        }
+    }
+}
+
+//ISSUES
+.issues {
+    padding: 100px 0px 100px 0px;
+    .issues-cont {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+
+        .issues-box {
+            cursor: pointer;
+
+            p {
+                color: #222222c2;
+                font-size: 14px;
+                letter-spacing: .5px;
+                line-height: 1.5em;
+            }
+
+            h4 {
+                transition: .3s all;
+            }
+
+            .issues-img {
+                height: 160px;
+                overflow: hidden;
+            }
+
+            .img-inside {
+                height: 160px;
+            }
+
+            .i1 {
+                background: url(../../img/o1.jpg) center/cover;
+                transition: .5s all;
+            }
+            
+            .i2 {
+                background: url(../../img/o2.jpg) center/cover;
+                transition: .5s all;
+            }
+            
+            .i3 {
+                background: url(../../img/o3.jpg) center/cover;
+                transition: .5s all;
+            }
+            
+            .i4 {
+                background: url(../../img/o4.jpg) center/cover;
+                transition: .5s all;
+            }
+        }
+
+        .issues-box:hover > h4{
+            color: #f8b600;
+        }
+
+        .issues-box:hover > .issues-img > .img-inside{
+            transform: rotate(-8deg) scale(125%);
+        }
+    }
+}
+
+
+//testimonial
+.testimonials {
+    padding: 100px 0px 100px 0px;
+    background-color: #f9f9ff;
+
+    .testi-cont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        .testi-box {
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+            padding: 20px;
+            cursor: pointer;
+
+            .testi-img {
+                background: url(../img/avatar-03.jpg) center/cover;
+                height: 50px;
+                width: 110px;
+                border-radius: 50%;
+                margin-right: 15px;
+                transform: translate(0, 30%);
+            }
+
+            .testi-txt {
+
+                h4 {
+                    transition: .3s all;
+                }
+
+                .testi-stars {
+                    display: flex;
+                    color: #2222229f;
+                }
+
+                .ts-left {
+                    i:nth-of-type(-1n+4) {
+                        color: #f8b600;
+                    }
+                }
+
+                .ts-right {
+                    i:nth-of-type(-1n+3) {
+                        color: #f8b600;
+                    }
+                }
+            }
+        }
+
+        .testi-box:hover > .testi-txt > h4 {
+            color: #f8b600;
+        }
+    }
+}
+
+//CUSTOM
+.custom {
+    .custom-cont {
+        display: flex;
+        .left {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .text-box {
+                width: 50%;
+
+                p {
+                    margin-bottom: 40px;
+                }
+                a {
+                    background-color: #222222;
+                }
+
+                a:hover {
+                    background-color: #f8b600;
+                    color: white;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            background: url(../../img/about-img.jpg) center/cover;
+            height: 600px;
+        }
+    }
+}
+
+//BLOG
+
+.blog {
+    padding: 100px 0px 100px 0px;
+
+    .blog-cont {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        .blog-box {
+
+            span {
+                background-color: #f9f9ff;
+                font-size: 12px;
+                padding: 10px 20px 10px 20px;
+                margin-right: 10px;
+                border: solid 1px #e6e6e9;
+                cursor: pointer;
+            }
+
+            h4 {
+                margin-top: 40px;
+            }
+
+            .img-blog {
+                height: 260px;
+                margin-bottom: 20px;
+            }
+
+            .ib1 {
+                background: url(../../img/b1.jpg);
+            }
+
+            .ib2 {
+                background: url(../../img/b2.jpg);
+            }
+
+            .ib3 {
+                background: url(../../img/b3.jpg);
             }
         }
     }

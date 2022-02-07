@@ -7,14 +7,13 @@
 // NAVBAR
 
 header {
-
+    height: 15vh;
     a, i {
         color: white;
     }
 
     nav {
         padding-top: 20px;
-        height: 100vh;
 
         // block au dessus de la navbar
         .top-navbar {
