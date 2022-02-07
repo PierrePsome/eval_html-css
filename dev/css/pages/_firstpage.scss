@@ -1,0 +1,58 @@
+
+// POPULAR DESTINATION
+.popular {
+    margin: 100px 0px 100px 0px;
+    text-align: center;
+    .popular-block-txt {
+        margin-bottom: 100px;
+        h2 {
+
+        }
+
+        p {
+            color: #2222229f;
+            font-size: 14px;
+        }
+    }
+
+    .popular-block-img {
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+
+    .popular-img {
+        height: 211px;
+        position: relative;
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+
+            p {
+                margin: 0 auto;
+            }
+    
+            h4 {
+                margin: 0 auto;
+            }
+        }
+
+    }
+
+    .popular-img:nth-child(1) {
+        background: url(../../img/d1.jpg) center/cover;
+    }
+
+    .popular-img:nth-child(2) {
+        background: url(../../img/d2.jpg) center/cover;
+    }
+
+    .popular-img:nth-child(3) {
+        background: url(../../img/d3.jpg) center/cover;
+    }
+}
