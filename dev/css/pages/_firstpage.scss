@@ -24,35 +24,54 @@
 
 
     .popular-img {
-        height: 211px;
         position: relative;
+        height: 211px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%);
+            a {
+                color: #222222;
+                border-radius: 1px;
+                padding: 10px 25px 10px 25px;
+                margin-bottom: 10px;
+                opacity: 0;
+            }
+
+            a::before {
+                @include befores;
+                background-color: #222222;
+                opacity: .3;
+            }
 
             p {
-                margin: 0 auto;
+                margin: 0;
             }
     
             h4 {
-                margin: 0 auto;
+                margin: 0;
             }
-        }
 
+    }
+
+    .popular-img:hover > .calque {
+        opacity: .5;
+    }
+
+    .popular-img:hover > a {
+        opacity: 1;
     }
 
     .popular-img:nth-child(1) {
-        background: url(../../img/d1.jpg) center/cover;
+        background: url(../img/d1.jpg) center/cover;
     }
 
     .popular-img:nth-child(2) {
-        background: url(../../img/d2.jpg) center/cover;
+        background: url(../img/d2.jpg) center/cover;
     }
 
     .popular-img:nth-child(3) {
-        background: url(../../img/d3.jpg) center/cover;
+        background: url(../img/d3.jpg) center/cover;
     }
 }
