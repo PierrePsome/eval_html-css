@@ -1,0 +1,59 @@
+
+.duo {
+    display: flex;
+    justify-content: space-between;
+}
+
+// NAVBAR
+
+header {
+
+    a, i {
+        color: white;
+    }
+
+    nav {
+        padding-top: 20px;
+
+        // block au dessus de la navbar
+        .top-navbar {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+            .nav-left {
+                a {
+                    font-weight: 300;
+                    margin-right: 15px;
+                    font-size: 12px;
+                }
+            }
+            .nav-right {
+                i {
+                    margin-right: 15px;
+                    font-size: 12px;
+                }
+                i:nth-of-type(4) {
+
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        // NAVBAR
+        .bottom-navbar {
+            background-color: rgba(255, 255, 255, 0.192);
+            padding: 15px;
+            border-radius: 3px;
+
+            .nav-links {
+                display: flex;
+                align-items: center;
+
+                a {
+                    margin-left: 15px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
