@@ -1,8 +1,7 @@
-.banner-hotel {
+.banner-temp {
 
     .banner {
         height: 40vh;
-        background: url(../img/hero-hotels.jpg) center/cover;
         z-index: -1;
         display: flex;
         justify-content: center;
@@ -45,6 +44,10 @@
             left: 0px;
             z-index: 0;
         }
+    }
+
+    .b-hotels {
+        background: url(../img/hero-hotels.jpg) center/cover;
     }
 }
 

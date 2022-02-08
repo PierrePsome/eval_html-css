@@ -1,0 +1,38 @@
+.b-blog {
+    background: url(../img/hero-blog.jpg) center/cover;
+}
+
+.blog-double-block {
+    padding: 100px 0px 100px 0px;
+
+    .left-block {
+        width: 70%;
+        .blog-img-txt-1 {
+
+            .blog-img1 {
+                width: 100%;
+                height: 350px;
+                background: url(../../img/blog/feature-img1.jpg) no-repeat center/cover;
+            }
+
+            .blog-txt1 {
+                display: flex;
+
+                    .blog-info {
+                        width: 30%;
+                        margin-right: 30px;
+
+                        .blog-block-info {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                    }
+
+                    .blog-parag {
+                        width: 70%;
+                    }
+            }
+        }
+    }
+}
