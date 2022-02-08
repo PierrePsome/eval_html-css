@@ -1,0 +1,123 @@
+.banner-hotel {
+
+    .banner {
+        height: 40vh;
+        background: url(../img/hero-hotels.jpg) center/cover;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .banner-txt {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1;
+
+            h2 {
+                font-size: 48px;
+            }
+
+            a {
+                color: white;
+            }
+            a:hover {
+                color: #f8b600;
+            }
+
+            i {
+                margin: 0px 20px 0px 20px;
+            }
+
+            i:hover {
+                color: white;
+            }
+        }
+
+        .black-filter {
+            position: absolute;
+            height: 40vh;
+            width: 100%;
+            background-color: #04091e;
+            opacity: .3;
+            top: 0px;
+            left: 0px;
+            z-index: 0;
+        }
+    }
+}
+
+// Destinations
+.destinations {
+    padding: 100px 0px 100px 0px;
+    background-color: #f9f9ff;
+    .dest-cont {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+
+        .dest-box {
+            background-color: white;
+
+            .dest-img {
+                width: 100%;
+                height: 211px;
+            }
+            
+            .di1 {
+                background: url(../img/hotels/d1.jpg);
+            }
+            
+            .di2 {
+                background: url(../img/hotels/d2.jpg);
+            }
+            
+            .di3 {
+                background: url(../img/hotels/d3.jpg);
+            }
+            
+            .di4 {
+                background: url(../img/hotels/d4.jpg);
+            }
+            
+            .di5 {
+                background: url(../img/hotels/d5.jpg);
+            }
+            
+            .di6 {
+                background: url(../img/hotels/d6.jpg);
+            }
+
+            .dest-marg {
+                margin: 25px;
+            }
+
+            .dest-parts {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    padding: 10px 15px 10px 15px;
+                    background-color: #f8b600;
+                    font-weight: bold;
+                }
+
+                a:hover {
+                    color: black;
+                }
+            }
+
+            .dest-parts:not(:last-child) {
+                border-bottom: solid 1px rgba(128, 128, 128, 0.247);
+            }
+
+            .title-stars {
+                i:not(:last-child) {
+                    color: #f8b600;
+                }
+            }
+        }
+    }
+}
