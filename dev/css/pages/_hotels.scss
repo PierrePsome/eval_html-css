@@ -62,6 +62,7 @@
 
         .dest-box {
             background-color: white;
+            transition: .3s all;
 
             .dest-img {
                 width: 100%;
@@ -121,6 +122,10 @@
                     color: #f8b600;
                 }
             }
+        }
+
+        .dest-box:hover {
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
         }
     }
 }
