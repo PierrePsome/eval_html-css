@@ -313,7 +313,7 @@
         gap: 2rem;
         .blog-box {
 
-            span {
+            a {
                 background-color: #f9f9ff;
                 font-size: 12px;
                 padding: 10px 20px 10px 20px;
@@ -322,25 +322,149 @@
                 cursor: pointer;
             }
 
+            a:hover {
+                background-color: #f8b600;
+                color: white;
+                border: solid 1px #f8b600;
+            }
+
             h4 {
                 margin-top: 40px;
+                transition: .3s all;
+                cursor: default;
+            }
+
+            h4:hover {
+                color: #f8b600;
+            }
+
+            .img-blog-cont {
+                overflow: hidden;
+                margin-bottom: 20px;
             }
 
             .img-blog {
                 height: 260px;
-                margin-bottom: 20px;
+                transition: .3s all;
             }
 
             .ib1 {
-                background: url(../img/b1.jpg);
+                background: url(../img/b1.jpg) no-repeat center/cover;
             }
 
             .ib2 {
-                background: url(../img/b2.jpg);
+                background: url(../img/b2.jpg) no-repeat center/cover;
             }
 
             .ib3 {
-                background: url(../img/b3.jpg);
+                background: url(../img/b3.jpg) no-repeat center/cover;
+            }
+        }
+
+        .blog-box:hover > .img-blog-cont > .img-blog {
+            transform: scale(107%);
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    // POPULAR DESTINATIONS
+    .popular {
+        .popular-block-img {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    // PRICES
+    .provide {
+        .packages-cont {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
+    //ISSUES
+    .issues {
+        .issues-cont {
+            grid-template-columns: repeat(1, 1fr);
+
+            .issues-box {
+
+                .issues-img {
+                    height: 300px;
+                    overflow: hidden;
+                }
+
+                .img-inside {
+                    height: 300px;
+                }
+            }
+
+            .issues-box:hover > .issues-img > .img-inside{
+                transform: rotate(0deg) scale(100%);
+            }
+        }
+    }
+
+    //testimonial
+    .testimonials {
+
+        .testi-cont {
+            grid-template-columns: repeat(1, 1fr);
+
+            .testi-box:nth-of-type(2) {
+                display: none;
+            }
+
+            .testi-box:hover > .testi-txt > h4 {
+                color: #f8b600;
+            }
+        }
+    }
+
+    //CUSTOM
+    .custom {
+        .custom-cont {
+            display: flex;
+            flex-direction: column;
+            .left {
+                width: 100%;
+
+                .text-box {
+                    margin: 50px 0px 50px 0px;
+                    text-align: center;
+
+                    p {
+                        margin-bottom: 40px;
+                    }
+                    a {
+                        background-color: #222222;
+                    }
+
+                    a:hover {
+                        background-color: #f8b600;
+                        color: white;
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+    }
+
+    //BLOG
+    .blog {
+        padding: 100px 0px 100px 0px;
+
+        .blog-cont {
+            grid-template-columns: repeat(1, 1fr);
+
+            .blog-box:nth-of-type(2), .blog-box:nth-of-type(3) {
+                display: none;
             }
         }
     }

@@ -304,9 +304,208 @@
         }
     }
 
+
+    // bloque de droite
     .right-block {
-        border: solid 1px gray;
+        border: solid 1px rgba(128, 128, 128, 0.281);
         margin-left: 30px;
-        padding: 20px;
+        padding: 50px 20px 20px 20px;
+
+        a {
+            width: 100%;
+            background-color: #f8b600;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .right-temp {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 0px 30px 0px;
+            border-bottom: solid 1px rgba(128, 128, 128, 0.281);
+        }
+
+
+        .searchbar-cont {
+            width: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: solid 1px rgba(128, 128, 128, 0.281);
+            padding-bottom: 30px;
+
+            input {
+                height: 2.5rem;
+                background-color: #f8b600;
+                border-radius: 50px;
+                border: none;
+                color: white;
+
+                padding: 0px 15px 0px 15px;
+            }
+
+            i {
+                color: white;
+                transform: translate(-50%);
+            }
+
+            ::placeholder {
+                color: white;
+            }
+        }
+
+        .charlie {
+            text-align: center;
+
+            .picture-of-charlie {
+                background: url(../img/blog/user-info.png) no-repeat center/cover;
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+
+            .nav-right {
+                i {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .posts-cont {
+            transition: .3s all;
+
+            .duo-posts {
+                display: flex;
+                align-items: center;
+
+                .posts-img {
+                    height: 60px;
+                    width: 100px;
+                    margin-right: 20px;
+                }
+
+                h4 {
+                    transition: .3s all;
+                    cursor: pointer;
+                }
+
+                h4:hover {
+                    color: #f8b600;
+                }
+
+                .p1 {
+                    background: url(../img/blog/pp1.jpg) center/cover;
+                }
+                .p2 {
+                    background: url(../img/blog/pp2.jpg) center/cover;
+                }
+                .p3 {
+                    background: url(../img/blog/pp3.jpg) center/cover;
+                }
+                .p4 {
+                    background: url(../img/blog/pp4.jpg) center/cover;
+                }
+            }
+        }
+
+        .ad-cont {
+
+            .ad {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 250px;
+                background-color: rgba(128, 128, 128, 0.11);
+                border: solid 1px rgba(128, 128, 128, 0.281);
+            }
+        }
+
+        .categories-cont {
+
+            .categorie {
+                padding: 30px 0px 10px 0px;
+                border-bottom: dotted 1px rgba(128, 128, 128, 0.281);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: .3s all;
+                cursor: pointer;
+            }
+
+            .categorie:hover {
+                color: #f8b600;
+                border-bottom: dotted 1px #f8b600;
+            }
+        }
+
+        .newsletter-cont {
+            text-align: center;
+
+            div {
+                display: flex;
+
+                input {
+                    padding: .5em;
+                }
+
+                input:nth-of-type(1) {
+                    border: solid 1px rgba(128, 128, 128, 0.281);
+                }
+
+                input:nth-of-type(2) {
+                    background-color: #f8b600;
+                    border: none;
+                    color: white;
+                }
+            }
+        }
+
+
+        .tags-cont {
+            border-bottom: none;
+
+            a {
+                margin-bottom: 20px;
+            }
+
+            .tags {
+                span {
+                    border: solid 1px rgba(128, 128, 128, 0.281);
+                    background-color: rgba(128, 128, 128, 0.144);
+                    padding: 10px;
+                    line-height: 50px;
+                    transition: .3s all;
+                    cursor: pointer;
+                }
+
+                span:hover {
+                    background-color: #f8b600;
+                    border-bottom: dotted 1px #f8b600;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .blog-double-block {
+        flex-direction: column;
+
+        .left-block {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .right-block {
+            width: 100%;
+            margin: 0px;
+        }
     }
 }

@@ -1,0 +1,71 @@
+.b-contact {
+    background: url(../img/hero-contact.jpg) center/cover;
+}
+
+.main-contact {
+    background-color: #f9f9ff;
+    padding-bottom: 100px;
+}
+
+.g-map {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.message-cont {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-bottom: 30px;
+
+
+    .message-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .message-info {
+            .infos {
+                p:nth-of-type(1) {
+                    font-weight: bold;
+                }
+                p:nth-of-type(2) {
+                    font-size: 12px;
+                    opacity: .8;
+                }
+            }
+        }
+
+        input {
+            height: 3em;
+            padding-left: 10px;
+            background-color: white;
+            border: solid 1px rgba(128, 128, 128, 0.308);
+        }
+
+        textarea {
+            padding: 10px;
+            border: solid 1px rgba(128, 128, 128, 0.308);
+            height: 100%;
+        }
+    }
+}
+
+.btn-send {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        padding: 15px 25px 15px 25px;
+        background-color: #f8b600;
+        border: solid 1px #f8b600;
+        color: white;
+        transition: .3s all;
+    }
+
+    a:hover {
+        color: #f8b600;
+        background-color: white;
+    }
+}

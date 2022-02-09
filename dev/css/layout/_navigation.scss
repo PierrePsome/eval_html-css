@@ -58,6 +58,46 @@ header {
                     font-size: 14px;
                 }
             }
+
+            .burger {
+                width: 40px;
+                height: 30px;
+                padding: 5px;
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                div {
+                    height: 2px;
+                    width: 100%;
+                    background-color: white;
+                    border: solid 1px white;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+
+    header {
+    
+        nav {
+    
+            // NAVBAR
+            .bottom-navbar {
+    
+                .nav-links {
+                    display: none;
+                }
+    
+                .burger {
+                    display: flex;
+                }
+            }
         }
     }
 }

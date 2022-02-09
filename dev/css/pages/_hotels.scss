@@ -70,27 +70,27 @@
             }
             
             .di1 {
-                background: url(../img/hotels/d1.jpg);
+                background: url(../img/hotels/d1.jpg) no-repeat center/cover;
             }
             
             .di2 {
-                background: url(../img/hotels/d2.jpg);
+                background: url(../img/hotels/d2.jpg) no-repeat center/cover;
             }
             
             .di3 {
-                background: url(../img/hotels/d3.jpg);
+                background: url(../img/hotels/d3.jpg) no-repeat center/cover;
             }
             
             .di4 {
-                background: url(../img/hotels/d4.jpg);
+                background: url(../img/hotels/d4.jpg) no-repeat center/cover;
             }
             
             .di5 {
-                background: url(../img/hotels/d5.jpg);
+                background: url(../img/hotels/d5.jpg) no-repeat center/cover;
             }
             
             .di6 {
-                background: url(../img/hotels/d6.jpg);
+                background: url(../img/hotels/d6.jpg) no-repeat center/cover;
             }
 
             .dest-marg {
@@ -126,6 +126,18 @@
 
         .dest-box:hover {
             box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor
+    // Destinations
+    .destinations {
+        padding: 100px 0px 100px 0px;
+        background-color: #f9f9ff;
+        .dest-cont {
+            grid-template-columns: repeat(1,1fr);
         }
     }
 }
