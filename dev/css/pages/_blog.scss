@@ -10,6 +10,7 @@
 
 .blog-double-block {
     display: flex;
+    width: 1140px;
 
     .left-block {
         width: 70%;
@@ -20,7 +21,7 @@
             .blog-img1 {
                 width: 100%;
                 height: 350px;
-                background: url(../../img/blog/feature-img1.jpg) no-repeat center/cover;
+                background: url(../img/blog/feature-img1.jpg) no-repeat center/cover;
             }
 
             .blog-txt1 {
@@ -88,10 +89,10 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 2.4rem;
+            width: 100%;
 
             img {
-                width: 380px;
-                height: 380px;
+                width: 50%;
             }
         }
 
@@ -310,6 +311,7 @@
         border: solid 1px rgba(128, 128, 128, 0.281);
         margin-left: 30px;
         padding: 50px 20px 20px 20px;
+        width: 30%;
 
         a {
             width: 100%;
@@ -328,7 +330,7 @@
 
 
         .searchbar-cont {
-            width: 100;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -341,6 +343,7 @@
                 border-radius: 50px;
                 border: none;
                 color: white;
+                width: 100%;
 
                 padding: 0px 15px 0px 15px;
             }
@@ -417,7 +420,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 300px;
+                width: 100%;
                 height: 250px;
                 background-color: rgba(128, 128, 128, 0.11);
                 border: solid 1px rgba(128, 128, 128, 0.281);
@@ -492,8 +495,12 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width: 600px) {
+    .blog-double-block {
+        width: 90vw;
+        margin: 0 auto;
+    }
 
     .blog-double-block {
         flex-direction: column;
@@ -507,5 +514,74 @@
             width: 100%;
             margin: 0px;
         }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .blog-double-block {
+    
+        .left-block {
+    
+    
+            .blog-img-txt-1 {
+    
+                .blog-txt1 {
+                    display: flex;
+                    flex-direction: column;
+    
+                        .blog-info {
+                            width: 100%;
+                            margin-right: 30px;
+                            display: grid;
+    
+                            p {
+                                text-align: left;
+                                cursor: pointer;
+                                transition: .3s all;
+                            }
+    
+                            p:hover {
+                                text-align: left;
+                                color: #f8b600;
+                            }
+    
+                            .blog-block-info {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+    
+                                p {
+                                    text-align: right;
+                                    cursor: pointer;
+                                    transition: .3s all;
+                                }
+                                p:hover {
+                                    text-align: right;
+                                    color: #f8b600;
+                                }
+    
+                                i {
+                                    margin-left: 20px;
+                                }
+                            }
+    
+                            .nav-right {
+                                display: flex;
+                                justify-content: flex-start;
+
+                                i:nth-of-type(1) {
+                                    margin-left: 0px;
+                                }
+                            }
+                        }
+
+                        .blog-parag {
+                            width: 100%;
+                        }
+                }
+            }
+        }
+    
     }
 }
